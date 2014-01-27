@@ -4,18 +4,18 @@ HOST: http://www.google.com
 # SchmaInfo API
 Schema-Info API ...
 
-## SchemaInfo collection [/schemaInfos]
+## SchemaInfo collection [/schemaInfos?offset=&limit=]
 ### List all schemaInfo [GET]
++ Parameters
+    + offset (optional, number, `1`) ... offset
+    + limit (optional, number, `10`) ... limit
 
 + Response 200 (application/json)
 
         [{ "name":"123", "namespace": "testNamespace"}]
         
-## Number of schema-Infos [/schemaInfos/count?offset=&limit=]
+## Number of schema-Infos [/schemaInfos/count]
 ### Get number of schemaInfos [GET]
-+ Parameters
-    + offset (optional, number, `1`) ... offset
-    + limit (optional, number, `10`) ... limit
 + Response 200 (application/json)
 
         [{1}]
