@@ -12,7 +12,16 @@ Schema-Info API ...
 
 + Response 200 (application/json)
 
-        [{ "name":"123", "namespace": "testNamespace"}]
+        [{
+  "name": "string",
+  "namespace": "string",
+  "schemaVersionInfo": [
+    {
+      "status": "string",
+      "version": "string"
+    }
+  ]
+}]
         
 ## Number of schema-Infos [/schemaInfos/count]
 ### Get number of schemaInfos [GET]
